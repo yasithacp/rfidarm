@@ -1,0 +1,40 @@
+Products:
+  tableName: products
+  columns:
+    product_id:
+      type: integer(6)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(100)
+      notnull: true
+
+Components:
+  tableName: components
+  columns:
+    component_id:
+      type: integer(6)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(100)
+      notnull: true
+
+ProductComponents:
+  tableName: product_components
+  columns:
+    product_id:
+      type: integer(6)
+      primary: true
+    component_id:
+      type: integer(6)
+      primary: true
+  relations:
+      Products:
+        local: product_id
+        foreign: product_id
+        type: one
+      Components:
+        local: component_id
+        foreign: component_id
+        type: one

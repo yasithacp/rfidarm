@@ -1,0 +1,119 @@
+/* 
+    Document   : style
+    Created on : Sep 3, 2011, 8:20:54 AM
+    Author     : orangehrm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+	display: block;
+}
+.mainHeading{
+	font-size: 14px;
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	background-color: #bad5f0;
+	padding-left: 5px;
+}
+
+.outerbox{
+	background-color:#f7f7f7;
+	border-color:#bad5f0;
+	height:auto;
+	position:relative;
+	z-Index:102;
+	left:5px;
+	width:600px;
+	-moz-border-radius:5px;
+	border:solid #6ca2d7 2px;
+}
+
+label{
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	font-size: 13px;
+	padding-left: 10px;
+	width: 80px;
+}
+
+input.savebutton,input.backbutton{
+	width: 60px;
+}
+
+.required {
+	color: #ff0000;
+	font-size: 11px;
+	vertical-align: text-top;
+}
+
+/* Div with buttons (save, edit, cancel) in form */
+div.formbuttons {
+	text-align: left;
+	width:auto;
+	height:auto;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:15px;
+	display:block;
+	padding-top: 10px;;
+	padding-bottom: 10px;
+	float:none;
+	border-top: 1px solid #6ca2d7;
+}
+
+input:not([type="image"]) {
+	font-size:11px;
+	padding-left:4px;
+	padding-right:4px;
+}
+br.clear {
+	clear:both;
+}
+
+label, span.formLabel, span.wideFormLabel {
+	padding-left:10px;
+	text-align:left;
+	width:120px;
+}
+
+.paddingLeftRequired {
+	font-size:8pt;
+	font-family:sans-serif;
+	padding-left:5px;
+	padding-top:5px;
+	color: #888888;
+}
+
+table.data-table thead td {
+	color:#444444;
+	font-size:13px;
+	font-weight:bold;
+	padding-bottom:4px;
+	padding-top:4px;
+	background-color:#bad5f0;
+}
+
+table.data-table {
+	border:medium none;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.odd {
+	background-color:#FFFBED;
+}
+.even {
+	background-color:#F7F7F7;
+}
+
+select {
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    font-size: 11px;
+    padding-left: 10;
+    width: 150px;
+}
