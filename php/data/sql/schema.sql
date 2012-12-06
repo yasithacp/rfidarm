@@ -12,7 +12,8 @@ create table `components` (
 
 create table `product_components` (
 	`product_id` int(11) not null default 0,
-	`component_id` int(11) not null default 0
+	`component_id` int(11) not null default 0,
+	`frequency` int(11) default 0
 ) engine=innodb default charset=utf8;
 
 alter table product_components

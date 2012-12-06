@@ -42,4 +42,14 @@ class MainDao
         }
     }
 
+    public function getProductComponentList(){
+
+        try {
+            $q = Doctrine_Query :: create()
+                ->from('ProductComponents');
+            return $q->execute();
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
 }

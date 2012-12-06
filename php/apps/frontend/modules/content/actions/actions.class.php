@@ -19,4 +19,5 @@ class contentActions extends sfActions
   {
     $this->forward('default', 'module');
   }
+
 }

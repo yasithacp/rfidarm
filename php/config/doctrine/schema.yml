@@ -29,6 +29,8 @@ ProductComponents:
     component_id:
       type: integer(6)
       primary: true
+    frequency:
+      type: integer(6)
   relations:
       Products:
         local: product_id

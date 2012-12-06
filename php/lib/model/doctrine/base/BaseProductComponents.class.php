@@ -7,15 +7,18 @@
  * 
  * @property integer $product_id
  * @property integer $component_id
+ * @property integer $frequency
  * @property Products $Products
  * @property Components $Components
  * 
  * @method integer           getProductId()    Returns the current record's "product_id" value
  * @method integer           getComponentId()  Returns the current record's "component_id" value
+ * @method integer           getFrequency()    Returns the current record's "frequency" value
  * @method Products          getProducts()     Returns the current record's "Products" value
  * @method Components        getComponents()   Returns the current record's "Components" value
  * @method ProductComponents setProductId()    Sets the current record's "product_id" value
  * @method ProductComponents setComponentId()  Sets the current record's "component_id" value
+ * @method ProductComponents setFrequency()    Sets the current record's "frequency" value
  * @method ProductComponents setProducts()     Sets the current record's "Products" value
  * @method ProductComponents setComponents()   Sets the current record's "Components" value
  * 
@@ -37,6 +40,10 @@ abstract class BaseProductComponents extends sfDoctrineRecord
         $this->hasColumn('component_id', 'integer', 6, array(
              'type' => 'integer',
              'primary' => true,
+             'length' => 6,
+             ));
+        $this->hasColumn('frequency', 'integer', 6, array(
+             'type' => 'integer',
              'length' => 6,
              ));
     }
